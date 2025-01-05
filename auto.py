@@ -92,6 +92,7 @@ def read(src, pos, n):
                         "Detected {} threats out of {} logs.".format(sum(pred), len(lines)),
                         style,
                     )
+                    
                     report = [title, brief]
                     for key in df.keys():
                         style = getSampleStyleSheet()["BodyText"]
@@ -103,6 +104,7 @@ def read(src, pos, n):
                         "The following report contains the level 3 threats (if any) detected by BhuvanRKSHA.",
                         style,
                     )
+                    
                     report.append(body)
                     if 2 in t:
                         style = getSampleStyleSheet()["Heading2"]
